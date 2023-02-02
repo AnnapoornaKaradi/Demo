@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class AppTest {
   @Test
   public void f() {
-	  System.setProperty("webdriver.chrome.driver", "C:/Users/Lenovo/chromedriver_win32/chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver=new ChromeDriver();
 		driver.navigate().to("https://www.amazon.in/");
 		driver.findElement(By.name("field-keywords")).sendKeys("dresses");
